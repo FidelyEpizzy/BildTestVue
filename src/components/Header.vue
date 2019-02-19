@@ -19,26 +19,24 @@
       </div>
     </div>
     <div class="row" id="menu-box">
-        <div class="col-12">
-        <a class="app-menu" href="">HOME</a>
-        <a class="app-menu" href="">ABOUT</a>
-        <a class="app-menu" href="">WORK</a>
-        <a class="app-menu" href="">CONTACT</a>
-        </div>
+      <div class="col-4">
+        <a class="app-menu" href>HOME</a>
+        <a class="app-menu" href>ABOUT</a>
+        <a class="app-menu" href>WORK</a>
+        <a class="app-menu" href>CONTACT</a>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-
 import logo from "@/assets/Logo.svg";
 import facebook from "@/assets/Facebook.svg";
 import rss from "@/assets/rss.svg";
 import twitter from "@/assets/Twitter.svg";
 import googlep from "@/assets/googlep.svg";
 import pinterest from "@/assets/pinterest.svg";
-import dribble from "@/assets/dribbble.svg"
-
+import dribble from "@/assets/dribbble.svg";
 
 export default {
   data() {
@@ -58,6 +56,7 @@ export default {
 <style >
 .container {
   padding-top: 1.8em;
+  max-width: 970px;
 }
 #mediaContainer {
   display: flex;
@@ -71,18 +70,15 @@ export default {
   margin-top: 0.9em;
 }
 #menu-box {
-    margin-top: 0.3em;
+  margin-top: 0.3em;
 }
 #menu-box a {
- text-decoration: none;
- color : #7f7f7f;
- font-family: 'Novecento sans wide Light';
- font-size: 1.20rem;
+  text-decoration: none;
+  color: #7f7f7f;
+  font-family: "Novecento sans wide Light";
+  font-size: 1.2rem;
 }
 .app-menu {
- margin-right:1.15em;
- 
+  margin-right: 1.15em;
 }
-
-
 </style>

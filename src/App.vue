@@ -4,6 +4,8 @@
     <div class="content"></div>
 
     <app-footer class="footer"></app-footer>
+    <app-footer-two class="footer"></app-footer-two>
+    
   </div>
 </template>
 
@@ -11,32 +13,28 @@
 import "../public/fonts.css";
 import Header from "./components/Header.vue";
 import Footer from "./components/Footer.vue";
+import AppFooterTwo from "./components/AppFooterTwo.vue";
 
 export default {
   components: {
     headerTest: Header,
-    appFooter: Footer
+    appFooter: Footer,
+    appFooterTwo: AppFooterTwo
   }
 };
 </script>
 
-<style scoped >
-html {
-  position: relative;
-  min-height: 100%;
-}
-body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
-}
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  height:120px;
-}
+<style scoped>
 .container {
   max-width: 970px;
+}
+
+.content {
+  min-height: calc(100vh - 350px);
+}
+.footer {
+
+  display:flex;
+  align-content: center;
 }
 </style>

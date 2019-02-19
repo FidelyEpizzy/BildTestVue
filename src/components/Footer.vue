@@ -1,39 +1,56 @@
 <template>
-  <div class="conainer-fluid appFooter">
-    <div class="container">
-      <div class="row">
-          <div class="col-7">
-          <h3>ARE YOU READY TO BE BLOWN AWAY?</h3>
+  
+    <div class="container-fluid" id="appFooterOne">
+      <div class="container" id="appFooterOneContainer">
+        <div class="row" id="appFooterOneRow">
+          <div class="col-12 col-lg-8">
+            <h3>ARE YOU READY TO BE BLOWN AWAY?</h3>
           </div>
-          <div class="col-5" id="buttonFooterSection">
-              <button type="button" class="buttonFooter"> CLICK HERE TO FIND OUT</button>
+          <div class="col-12 col-lg-4 appFooterButton">
+            <app-button></app-button>
           </div>
+        </div>
+      
+        <div class="row">
+           
+        </div>
+        </div>
       </div>
-    </div>
-  </div>
+   
+    
 </template>
 
 <script>
-export default {};
+import ButtonClickHere from "./ButtonClickHere.vue";
+export default {
+  components: {
+    appButton: ButtonClickHere
+  }
+};
 </script>
 
-<style >
-.container {
-    max-width: 970px;
+<style>
+#appFooterOne {
+  background-color: #322f2f;
+ 
+ 
 }
-.appFooter {
-    background-color:black; 
+#appFooterOneContainer {
+  max-width: 970px;
+  color: white;
+   padding-top:0;
+ 
 }
-h3 {
-    color: white;
+.appFooterButton {
+  display: flex;
+  justify-content: flex-end;
 }
-#buttonFooterSection{
-    display:flex;
-    justify-content: flex-end;
+
+#appFooterOneRow {
+ padding-top:3.1em;
+ padding-bottom:3.1em;
 }
-.buttonFooter {
-    background-color: rgb(8, 250, 149);
-    border:none;
-   
+#appFooterOneRow h3 {
+  font-size: 1.6rem;
 }
 </style>

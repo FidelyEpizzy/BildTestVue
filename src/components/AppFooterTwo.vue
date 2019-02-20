@@ -21,10 +21,10 @@ export default {
 
 <style>
 #appFooterTwo {
-    background-color: #efefef;
+    background-color:#efefef;
     font-size: 0.7rem;
     font-family: 'Novecento sans wide Light';
-    color:grey;
+    color:#afafaf;
 }
 #appFooterTwoContainer {
     padding-top: 0;

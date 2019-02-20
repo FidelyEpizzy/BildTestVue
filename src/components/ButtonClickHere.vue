@@ -1,17 +1,16 @@
 <template>
     <div>
-        <button class ="button">{{buttons[0]}}</button>
+        <button class ="button">{{appButtonValue}}</button>
     </div>
 </template>
 
 <script>
 export default {
-    data() {
-        return {
-            buttons: ['CLICK HERE TO FIND OUT','BROWSE PORTFOLIO','SEND MESSAGE']
-        }
+    props: ["appButtonValue"]
+
     }
-}
+    
+
 </script>
 
 <style>

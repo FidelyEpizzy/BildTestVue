@@ -23,7 +23,7 @@
         <a class="app-menu" href>HOME</a>
         <a class="app-menu" href>ABOUT</a>
         <a class="app-menu" href>WORK</a>
-        <a class="app-menu" href>CONTACT</a>
+        <router-link to="/contact" clas="app-menu">CONTACT</router-link>
       </div>
     </div>
   </div>

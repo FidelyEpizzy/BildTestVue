@@ -34,6 +34,7 @@
         </div>
 
         <div class="offset-1 col-4" id="appContactInfoCol">
+          
           <h4>CONTACT INFO</h4>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus, nobis?</p>
           <p>
@@ -47,12 +48,15 @@
           <br>
           <h4>STORE HOURS</h4>
           <div>
-            <p>Monday-Thursday
-              <br>Friday
-              <br>Saturday
-              <br>Sunday & Holidays
-            </p>
-          </div>
+                    <div class="row no-gutters">
+                    <div class="">
+                        <p> Monday - Thursady <br> Friday <br> Saturday <br> Sunday & Holidays </p>
+                    </div>
+                    <div class="offset-2 col-5">
+                      <p>8 am - 5 pm <br> 8 am - 6 pm <br> 9 am - 5 pm <br> Closed</p>  
+                    </div>
+                </div>
+                </div>
         </div>
       </div>
     </div>
@@ -64,7 +68,7 @@ import ButtonClickHere from "./ButtonClickHere.vue";
 export default {
   data() {
     return {
-      maxCharacters: "10",
+      maxCharacters: "500",
       charsLeft: "",
       formMail: "",
       lengthOK: true

@@ -3,7 +3,10 @@
     <header-test></header-test>
     <app-title :appHeadlineValue="titleValue[0]"></app-title>
     <div class="content">
-     <app-contact></app-contact>
+      
+     <router-view>
+       
+     </router-view>
     </div>
     <app-footer class="footer"></app-footer>
     <app-footer-two class="footer"></app-footer-two>

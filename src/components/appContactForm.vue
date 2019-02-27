@@ -2,7 +2,7 @@
   <div>
     <div class="container">
       <div class="row">
-        <div class="col-7 appFormCol">
+        <div class="col-12 col-md-7 appFormCol">
           <h4>CONTACT FORM</h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est cum cumque laboriosam nulla commodi inventore.</p>
           <form>
@@ -33,7 +33,7 @@
           </form>
         </div>
 
-        <div class="offset-1 col-4" id="appContactInfoCol">
+        <div class="offset-lg-1 col-12 col-lg-4" id="appContactInfoCol">
           
           <h4>CONTACT INFO</h4>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus, nobis?</p>
@@ -93,7 +93,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style >
 .form-group {
   padding: 0;
   border: 1px solid grey;

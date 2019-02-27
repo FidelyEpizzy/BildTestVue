@@ -12,6 +12,9 @@
         <img :src="mediaPinterest" alt="visit-our-pinterest">
         <img :src="mediaDribble" alt="visit-our-dribble">
       </div>
+      <div class="col-6">
+        
+      </div>
     </div>
     <div class="row">
       <div class="col-12" id="horizontalLine">
@@ -21,9 +24,9 @@
     <div class="row" id="menu-box">
       <div class="col-4">
         <a class="app-menu" href>HOME</a>
-        <a class="app-menu" href>ABOUT</a>
+        <router-link to="/about" class="app-menu">ABOUT</router-link>
         <a class="app-menu" href>WORK</a>
-        <router-link to="/contact" clas="app-menu">CONTACT</router-link>
+        <router-link to="/contact" classs="app-menu">CONTACT</router-link>
       </div>
     </div>
   </div>
@@ -80,5 +83,10 @@ export default {
 }
 .app-menu {
   margin-right: 1.15em;
+}
+@media (max-width: 576px) {
+  #mediaContainer, #menu-box {
+    display:none;
+  }
 }
 </style>

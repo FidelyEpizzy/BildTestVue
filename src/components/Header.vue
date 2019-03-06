@@ -12,6 +12,12 @@
         <img :src="mediaPinterest" alt="visit-our-pinterest">
         <img :src="mediaDribble" alt="visit-our-dribble">
       </div>
+      <div class="col-6" id="mediaContainerMenu">
+        <div>
+          
+          
+        </div>
+      </div>
       <div class="col-6"></div>
     </div>
     <div class="row">
@@ -38,6 +44,7 @@ import twitter from "@/assets/Twitter.svg";
 import googlep from "@/assets/googlep.svg";
 import pinterest from "@/assets/pinterest.svg";
 import dribble from "@/assets/dribbble.svg";
+import appHamubrgerMenu from "./appHamubrgerMenu.vue";
 
 export default {
   data() {
@@ -48,8 +55,12 @@ export default {
       mediaTwitter: twitter,
       mediaGooglep: googlep,
       mediaPinterest: pinterest,
-      mediaDribble: dribble
+      mediaDribble: dribble,
+   
     };
+  },
+  components: {
+       appHamburger : appHamubrgerMenu
   }
 };
 </script>
@@ -82,9 +93,21 @@ export default {
 .app-menu {
   margin-right: 1.15em;
 }
+.hamburger {
+  font-size: 3rem;
+}
 @media (max-width: 576px) {
   #mediaContainer,
   #menu-box {
+    display: none;
+  }
+  #mediaContainerMenu {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+@media (min-width: 576px) {
+  #mediaContainerMenu {
     display: none;
   }
 }

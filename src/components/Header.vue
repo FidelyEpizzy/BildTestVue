@@ -27,10 +27,10 @@
     </div>
     <div class="row" id="menu-box">
       <div class="col-4">
-        <a class="app-menu" href>HOME</a>
+        <router-link to="/" class="app-menu">HOME</router-link>
         <router-link to="/about" class="app-menu">ABOUT</router-link>
         <router-link to="/work" class="app-menu">WORK</router-link>
-        <router-link to="/contact" classs="app-menu">CONTACT</router-link>
+        <router-link to="/contact" class="app-menu">CONTACT</router-link>
       </div>
     </div>
   </div>

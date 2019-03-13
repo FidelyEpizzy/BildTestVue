@@ -11,7 +11,7 @@ import VueRouter from 'vue-router';
 import { routes } from './routes';
 // font awesome
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faTh, faBars, faHamburger, faTimesCircle } from '@fortawesome/free-solid-svg-icons'
+import { faTh, faBars, faHamburger, faTimesCircle,faArrowAltCircleLeft,faArrowAltCircleRight } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 // vuelidate
 import Vuelidate from 'vuelidate';
@@ -27,7 +27,7 @@ Vue.use(Slick)
 
 Vue.use(VModal)
 Vue.use(Vuelidate)
-library.add(faTh, faBars, faHamburger, faTimesCircle)
+library.add(faTh, faBars, faHamburger, faTimesCircle, faArrowAltCircleLeft, faArrowAltCircleRight)
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 

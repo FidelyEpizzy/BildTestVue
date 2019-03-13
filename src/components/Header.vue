@@ -27,7 +27,7 @@
     </div>
     <div class="row" id="menu-box">
       <div class="col-4">
-        <router-link to="/" class="app-menu">HOME</router-link>
+        <router-link to="/" class="app-menu" exact >HOME</router-link>
         <router-link to="/about" class="app-menu">ABOUT</router-link>
         <router-link to="/work" class="app-menu">WORK</router-link>
         <router-link to="/contact" class="app-menu">CONTACT</router-link>
@@ -96,6 +96,10 @@ export default {
 .hamburger {
   font-size: 3rem;
 }
+.router-link-active{
+ color: #2ecc71 !important;
+}
+
 @media (max-width: 576px) {
   #mediaContainer,
   #menu-box {

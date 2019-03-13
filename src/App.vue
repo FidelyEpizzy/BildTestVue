@@ -45,4 +45,5 @@ export default {
   display: flex;
   align-content: center;
 }
+
 </style>

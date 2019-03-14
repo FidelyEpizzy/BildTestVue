@@ -26,11 +26,8 @@
       </div>
     </div>
     <div class="row" id="menu-box">
-      <div class="col-4">
-        <router-link to="/" class="app-menu" exact >HOME</router-link>
-        <router-link to="/about" class="app-menu">ABOUT</router-link>
-        <router-link to="/work" class="app-menu">WORK</router-link>
-        <router-link to="/contact" class="app-menu">CONTACT</router-link>
+      <div class="col-5">
+        <router-link v-for="router in navMenu" :to="router.path" class="app-menu" exact :key="router" > {{ router.name }} </router-link>
       </div>
     </div>
   </div>
@@ -61,7 +58,12 @@ export default {
   },
   components: {
        appHamburger : appHamubrgerMenu
-  }
+  },
+  computed: {
+    navMenu() {
+      return this.$store.getters.navMenuGetter;
+    }
+  } 
 };
 </script>
 
